@@ -1,3 +1,5 @@
+require 'pry'
+
 class MP3Importer
 
   attr_accessor :path 
@@ -10,7 +12,7 @@ class MP3Importer
     files = []
     # Dir.children("./spec/fixtures")
     files << Dir.foreach(self.path) {|file| file.split(" - ")}
-    files
+    binding.pry
   end 
 
   # def import(filenames)
