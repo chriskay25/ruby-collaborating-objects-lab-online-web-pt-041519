@@ -30,7 +30,8 @@ class Artist
 
   def self.find(name)
     @@all.find do |artist|
-      
+      artist.name == name 
+    end 
   end 
   
   def self.create(name)
