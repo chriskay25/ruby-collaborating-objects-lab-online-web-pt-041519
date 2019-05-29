@@ -9,11 +9,11 @@ class MP3Importer
   end 
   
   def files 
+    binding.pry
     files = []
     files << Dir.children(self.path).each do  |file| 
       file.split(" - ")
     end 
-    binding.pry
   end 
 
   # def import(filenames)
