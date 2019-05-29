@@ -28,6 +28,14 @@ class Artist
     end
   end 
 
+  def self.find(name)
+    @@all.each do ||
+  end 
+  
+  def self.create(name)
+    
+  end 
+
 end 
 
 
