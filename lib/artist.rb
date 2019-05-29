@@ -19,5 +19,15 @@ class Artist
   def add_song(song_name)
     @songs << song_name
   end 
+  
+  def self.find_or_create_by_name(artist_name)
+    if self.name.nil?
+      
+  end 
 
 end 
+
+
+
+
+
