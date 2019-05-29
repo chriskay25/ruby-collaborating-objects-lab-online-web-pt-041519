@@ -12,6 +12,7 @@ class MP3Importer
     files = []
     files << Dir.children(self.path) each do  |file| 
       file.split(" - ")
+    end 
     binding.pry
   end 
 
