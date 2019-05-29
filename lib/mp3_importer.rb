@@ -10,7 +10,7 @@ class MP3Importer
   
   def files 
     files = []
-    Dir.new(self.path).each do  |file| 
+    Dir.children(self.path).each do  |file| 
       files << file.split(" - ")
     end 
     files
