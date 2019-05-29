@@ -29,7 +29,8 @@ class Artist
   end 
 
   def self.find(name)
-    @@all.each do ||
+    @@all.find do |artist|
+      
   end 
   
   def self.create(name)
