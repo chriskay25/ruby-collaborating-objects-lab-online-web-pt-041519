@@ -10,7 +10,7 @@ class MP3Importer
     files = []
     # Dir.children("./spec/fixtures")
     files << Dir.foreach(self.path) {|file| file.split(" - ")}
-    files[0]
+    files
   end 
 
   # def import(filenames)
