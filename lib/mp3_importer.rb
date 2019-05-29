@@ -13,12 +13,11 @@ class MP3Importer
     Dir.children(self.path).each do  |file| 
       files << file.split(" - ")
     end 
-    binding.pry
     files
   end 
 
   def import(filenames)
-  #   filenames.each{ |filename| Song.new_by_filename(filename) }
+    filenames.each{ |filename| Song.new_by_filename(filename) }
   end
   
 end 
