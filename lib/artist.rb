@@ -39,6 +39,10 @@ class Artist
     artist.save
     artist
   end 
+  
+  def print_songs(artist)
+    artist.songs 
+  end 
 
 end 
 
