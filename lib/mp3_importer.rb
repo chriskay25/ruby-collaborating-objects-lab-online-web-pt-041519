@@ -11,8 +11,8 @@ class MP3Importer
   def files 
     binding.pry
     files = []
-    files << Dir.children(self.path).each do  |file| 
-      file.split(" - ")
+    Dir.children(self.path).each do  |file| 
+      files << file.split(" - ")
     end 
   end 
 
